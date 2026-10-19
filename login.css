@@ -1,8 +1,7 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
@@ -14,13 +13,28 @@ body {
   margin: 0;
 }
 
-.left-side {
-    background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 100%);
-    width: 444;
-    height: 868;
+.right-side{
+    width: 444px;
+    height: 868px;
     top: 16px;
     left: 16px;
     border-radius: 16px;
+}
+
+.left-side {
+width: 526;
+height: 273;
+top: 310px;
+left: 687px;
+gap: 24px;
+
+}
+
+.login-form{
+width: 216;
+height: 22;
+top: 40px;
+left: 1184px;
 }
 
 .img1{
@@ -49,4 +63,125 @@ body {
     background-color: rgba(70, 97, 230, 1);
     border-radius: 8px;
     color: white;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #f5f6fc;
+    font-family: Arial, sans-serif;
+}
+
+
+.left-side {
+    width: 335px;
+    min-height: calc(100vh - 30px);
+    border-radius: 12px;
+    background: linear-gradient(
+        150deg,
+        #8d3df5,
+        #c42fbd,
+        #853df5,
+        #4096f5
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 30px;
+}
+
+.h_2 {
+    color: white;
+    font-size: 24px;
+}
+
+.img1 {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+/* Right-side */
+.right-side {
+    flex: 1;
+    min-width: 0;
+    min-height: calc(100vh - 30px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 395px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.top-link {
+    align-self: flex-end;
+    color: #3a4374;
+    font-size: 12px;
+    margin-bottom: auto;
+}
+
+.a_1 {
+    color: #4661e6;
+    text-decoration: none;
+}
+
+.form-content {
+    margin-top: 150px;
+    margin-bottom: 12px;
+}
+
+.h__2 {
+    color: #3a4374;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.p-1 {
+    color: #7883a8;
+    font-size: 12px;
+}
+
+.email_,
+.password_ {
+    width: 100%;
+}
+
+.inp1,
+.password_ input {
+    width: 100%;
+    height: 38px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 18px;
+    background: white;
+    color: #3a4374;
+    font-size: 12px;
+}
+
+.btn_login {
+    width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4661e6;
+    color: white;
+    font-weight: bold;
 }
